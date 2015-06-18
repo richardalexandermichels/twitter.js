@@ -94,7 +94,7 @@
     // some logic to add the new tweet to the DOM…
 
     var tweetNode = document.createElement('LI');
-    tweetNode.innerHTML = '<a href="/users/"'+tweet.name+'>'+tweet.name+tweet.text+'</a>'
+    tweetNode.innerHTML = '<a href="/users/'+tweet.name+'">'+tweet.name+tweet.text+'</a>'
     document.getElementById('tweet-list').appendChild(tweetNode)
   }); 
 </script>

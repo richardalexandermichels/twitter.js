@@ -1,11 +1,10 @@
 var express = require('express')
-var socketio = require('socket.io');
 var logger = require('morgan');
 var app = express()
 var swig = require('swig')
 var routes = require('./routes/');
 var body =  require('body-parser')
-
+var socketio = require('socket.io');
 
 app.use(body.urlencoded({ extended: false }))
 app.use(body.json())
